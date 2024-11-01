@@ -1,0 +1,6 @@
+DATA:
+  PATH: "data/mnist"
+  BATCH_SIZE: 64 
+MODEL:
+  INPUT_SIZES: [28, 28, 1]
+  OUTPUT_SIZE: 10
