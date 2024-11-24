@@ -2,7 +2,7 @@
 Training a network on the mnist_dataset in tensorflow and then deploying it in C++.
 
 ## Run Object Detector 
-Note: The classification network applied to a sliding window selection of the source image.
+Note: Object detection is performed by using a sliding window to divide the image into small chunks, and then each of them is classified separately. Non-maximum suppression is used to get the final result.
 ```bash
 bazel run //application/src:object_detector -- /ABSOLUTE/PATH/TO/mnist_cpp/assets/ckpts /ABSOLUTE/PATH/TO/mnist_cpp/assets/imgs/multi.png
 ```
@@ -15,7 +15,7 @@ bazel run //application/src:classification -- /ABSOLUTE/PATH/TO/mnist_cpp/assets
 ![image description](assets/teaser/output_classification.png)
 
 ## Run training
-Download the mnist_dataset. The data should be download in `mnist_cpp/data/mnist`.
+Download the mnist_dataset. The data should be located in `mnist_cpp/data/mnist`.
 ```bash
 python python/dataloader/utils.py
 ```
