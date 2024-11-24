@@ -14,9 +14,6 @@ bazel run //application/src:classification -- /ABSOLUTE/PATH/TO/mnist_cpp/assets
 ```
 ![image description](assets/teaser/output_classification.png)
 
-## Downalod the mnist_dataset
-
-
 ## Run training
 Download the mnist_dataset. The data should be download in `mnist_cpp/data/mnist`.
 ```bash
